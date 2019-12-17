@@ -1,0 +1,12 @@
+create database springdb;
+
+use springdb;
+
+create table first(
+	eid int,
+	depid int,
+	ename varchar(40),
+	primary key(eid)
+);
+
+insert into first values(1,20,pragyan);

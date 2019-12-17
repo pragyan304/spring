@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+<bean id ="obj1" class="spring1.Presentation">
+<property name="doaObj" ref ="obj2"/>
+</bean>
+<bean id ="obj2" class="spring1.Dao"/>
+
+
+
+
+<!-- 	create table first (
+		eid int,
+		depid int,
+		ename varchar(40),
+		primary key(eid)
+	)
+	insert into first values(1,10,"shashwat"); -->
+<!-- 
+<bean id ="obj1" class="a01basics.spring.X">
+<property name="horror" value="23"/>
+</bean>
+
+<bean id ="obj2" class="a01basics.spring.X"/>
+ -->
+
+<!-- 
+<bean id ="obj1" class="a02springproject.B"/>
+
+<bean id ="obj2" class="a02springproject.A">
+<property name="junk"  ref="obj1"/>
+</bean>
+ -->
+
+
+<!-- 
+
+<bean id ="simobj" class="basics.SiM">
+<property name="simno" value ="44"/>
+</bean>
+
+
+<bean id ="simobj1" class="basics.SiM">
+<property name="simno" value ="17"/>
+</bean>
+
+<bean id="mobj1" class="basics.Mobile">
+	<property name="x"  ref="simobj"/>
+</bean>
+
+
+ -->
+
+
+<!-- 
+
+<bean id ="x" class="basics.B">
+</bean>
+
+
+<bean id ="obj2" class="basics.A">
+	<property name="y" ref="x"/>
+	
+	
+</bean>
+
+ -->
+
+<!--  insdie the class A, it wiill look for a function whose name is setY whose input argument is of
+	type B   -->
+
+
+
+
+
+
+
+
+
+
+
+<!--  we are telling spring hey look create the object of the class B its
+object name should be obj1   -->
+	
+	
+</beans>
